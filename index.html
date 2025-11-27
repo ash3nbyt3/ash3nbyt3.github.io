@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title> Kevin Dian - Research and Lab Notes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-inner">
+            <div class="brand">ash3nbyt3@crypt:~$</div>
+            <nav>
+                <a href="#home">home</a>
+                <a href="#blog">blog</a>
+                <a href="#projects">projects</a>
+                <a href="#resources">resources</a>
+                <a href="#about">about</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="hero-grid">
+                <div>
+                    <h1 class="hero-title">Research & Lab Notes</h1>
+                    <p class="hero-subtitle">A hive where I keep my research, lab notes and other thoughts on security, artificial intelligence, and software development. I will also keep resources and tools that I develop or that I find practical here.</p>
+                    <div class="hero-tags">
+                        <span class="tag-pill">offensive security</span>
+                        <span class="tag-pill">artifical intelligence</span>
+                        <span class="tag-pill">malware analysis</span>
+                    </div>
+                </div>
+                  
+                <!-- maybe a logo here -->
+                
+                <aside></aside>
+            </div>
+        </section>
+        
+        <!-- TODO: implement dynamic loading of md blog articles -->
+
+        <section id="blog">
+            <div class="section-label">/blog</div>
+            <h2 class="section-title">Logs & Writeups</h2>
+            <p class="section-intro">Thoughts, articles, CTF writeups, anything that I feel worth sharing with others.</p>
+            
+            <div class="cards-grid">
+                <article class="card">
+                    <div class="card-info">Log • Entry</div>
+                    <h3 class="card-title">foundations</h3>
+                    <p class="card-content">
+                        The biggest lesson after 12 years as a working professional.
+                    </p>
+                    <div class="blog-tags">
+                        <span class="blog-tag">misc</span>
+                    </div>
+                    <a class="card-link" href="#">Read...</a>
+                </article>
+                <article class="card">
+                    <div class="card-info">Log • Tutorial</div>
+                    <h3 class="card-title">network scanner with python</h3>
+                    <p class="card-content">The goal of this tutorial is to introduce you to basic python scripting and create a simple network scanner.</p>
+                    <div class="project-tags">
+                        <span class="blog-tag">tutorial</span>
+                        <span class="blog-tag">network security<span>
+                    </div>
+                    <a class="card-link" href="#">Read...</a>
+                </article>
+            </div>
+            <a class="section-more" href="./blog.html">More...</a>
+        </section>
+       
+        <!-- TODO: Implement dynamic project loading from file -->
+
+        <section id="projects">
+            <div class="section-label">/projects</div>
+            <h2 class="section-title">Tools & Experiments</h2>
+            <p class="section-intro">Small utilities, prototypes and experiments from the forge — some security related, some AI related, others exploratory.</p>
+            <div class="cards-grid">
+                <article class="card">
+                    <div class="card-info"></div>
+                    <h3 class="card-title"></h3>
+                    <p class="card-content"></p>
+                    <div class="project-tags">
+                        <span class="project-tag"></span>
+                        <span class="project-tag"><span>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-info"></div>
+                    <h3 class="card-title"></h3>
+                    <p class="card-content"></p>
+                    <div class="project-tags">
+                        <span class="project-tag"></span>
+                        <span class="project-tag"><span>
+                    </div>
+                </article>
+            </div>
+            <a class="section-more" href="/projects.html">More...</a>
+        </section>
+        
+        <section id="resources">
+            <div class="section-label">/ressources</div>
+            <h2 class="section-title">Playbooks & References</h2>
+            <p class="section-intro"></p>
+            <ul class="resource-list">
+                <li class="resource-title">
+                    <span class="resource-title">Lorem</span>
+                    <span class="resource-content">Ipsum</span>
+                    <a href="#" class="resource-link">todo:publish</a>
+                </li>
+                <li class="resource-title">
+                    <span class="resource-title">Lorem</span>
+                    <span class="resource-content">Ipsum</span>
+                    <a href="#" class="resource-link">todo:publish</a>
+                </li>
+            </ul>
+            
+            <a class="section-more" href="/resources.html">More...</a>
+        </section>
+
+        <section id="about">
+            <div class="section-label">/about</div>
+            <h2 class="section-title">/whoami</h2>
+            <div class="about-grid">
+                <div class="about-content">
+                    <p>I’m Kevin — a senior security researcher specializing in malware analysis, adversarial tradecraft, and threat intelligence. I study how attackers operate across systems and use that insight to guide detection strategy, validate controls, and shape threat-informed architectures. Outside of security, I explore indie game development, immerse myself in story-driven games, and spend time learning about space and the mechanics of the universe.</p>
+                </div>
+                <aside>
+                    <ul class="about-info">
+                        <li>$ location: canada</li>
+                        <li>$ status: open to work</li>
+                    <ul>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="socials">
+            <li><a href="https://linkedin.com/in/kevindian" target="_blank"><img src="linkedin.svg" alt="LinkedIn" width="24" height="24" /></a></li>
+            <li><a href="https://github.com/ash3nbyt3" target="_blank"><img src="github.svg" alt="" width="24" height="24" /></a></li>
+            <li><a href="mailto:dian.kevin@outlook.com"><img src="mail.svg" alt="E-mail" width="24" height="24" /></a></li>
+            <li><a href=""><img src="lock.svg" alt="PGP Public Key" width="24" height="24" /></a></li>
+        </ul>
+        kevin dian - all rights reserved <span id="year"></span>
+    </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
